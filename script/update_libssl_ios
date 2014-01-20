@@ -2,6 +2,9 @@
 
 set -e
 
+exec > >(tee /tmp/openssl.log)
+exec 2>&1
+
 # source the common build functions
 SCRIPT_DIR=$(dirname "$0")
 source "${SCRIPT_DIR}/ios_build_functions.sh"
@@ -44,12 +47,12 @@ function build_ssl ()
     fi
     echo "$LOG"
 
-    ./Configure ${HOST} ${CONFIG} --openssldir="/tmp/openssl-${ARCH}" >> "${LOG}" 2>&1
-    perl -i -pe "s|^CC= gcc|CC= ${CLANG} -miphoneos-version-min=${IPHONEOS_DEPLOYMENT_TARGET} -arch ${ARCH} |g" Makefile >> "${LOG}" 2>&1
-    perl -i -pe "s|^CFLAG= (.*)|CFLAG= -isysroot ${SDKROOT} \$1|g" Makefile >> "${LOG}" 2>&1
-    make >> "${LOG}" 2>&1
+    ./Configure ${HOST} ${CONFIG} --openssldir="/tmp/openssl-${ARCH}"
+    perl -i -pe "s|^CC= gcc|CC= ${CLANG} -miphoneos-version-min=${IPHONEOS_DEPLOYMENT_TARGET} -arch ${ARCH} |g" Makefile
+    perl -i -pe "s|^CFLAG= (.*)|CFLAG= -isysroot ${SDKROOT} \$1|g" Makefile
+    make
 
-    make install >> "${LOG}" 2>&1
+    make install
     popd > /dev/null
     rm -rf "/tmp/openssl"
 
