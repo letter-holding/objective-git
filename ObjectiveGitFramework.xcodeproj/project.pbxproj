@@ -1290,6 +1290,7 @@
 						LastSwiftMigration = 0830;
 					};
 					8DC2EF4F0486A6940098B216 = {
+						DevelopmentTeam = 432ZXYXDNY;
 						LastSwiftMigration = 0800;
 					};
 					D01B6ED219F82E2000D411BC = {
@@ -1714,6 +1715,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0D8186A174421EB00995A2E /* Mac-Framework.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEVELOPMENT_TEAM = 432ZXYXDNY;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
@@ -1743,6 +1746,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0D8186A174421EB00995A2E /* Mac-Framework.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEVELOPMENT_TEAM = 432ZXYXDNY;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
