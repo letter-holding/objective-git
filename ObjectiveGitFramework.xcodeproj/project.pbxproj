@@ -1225,8 +1225,6 @@
 				79262F0F13C697BE00A4B1EA /* Copy git2 Headers */,
 				BEF7E4DF1A3A47450035BB8E /* Copy git2 Headers again */,
 				8DC2EF500486A6940098B216 /* Headers */,
-				4D751E9D215D765D003CD3CE /* Package external libraries */,
-				37C7720A23A05A13006796C8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1359,37 +1357,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		37C7720A23A05A13006796C8 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/bin/codesign --deep --force --sign \"${CODE_SIGN_IDENTITY}\" --timestamp=none ${BUILT_PRODUCTS_DIR}/ObjectiveGit.framework/Versions/A\n";
-		};
-		4D751E9D215D765D003CD3CE /* Package external libraries */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Package external libraries";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "./script/repackage-dylibs.rb";
-		};
 		6A28265317C69CB400C6A948 /* OpenSSL-iOS */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1723,7 +1690,6 @@
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/usr/local/opt/openssl@1.1/lib",
 					"$(PROJECT_DIR)/External/build/lib",
 				);
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
@@ -1732,8 +1698,6 @@
 					"-force_load",
 					External/libgit2.a,
 					/usr/local/lib/libssh2.a,
-					"-lcrypto",
-					"-lssl",
 					"-lcurl",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
@@ -1754,7 +1718,6 @@
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/usr/local/opt/openssl@1.1/lib",
 					"$(PROJECT_DIR)/External/build/lib",
 				);
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
@@ -1763,8 +1726,6 @@
 					"-force_load",
 					External/libgit2.a,
 					/usr/local/lib/libssh2.a,
-					"-lcrypto",
-					"-lssl",
 					"-lcurl",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
@@ -1994,7 +1955,6 @@
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/usr/local/opt/openssl@1.1/lib",
 					"$(PROJECT_DIR)/External/build/lib",
 				);
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
@@ -2003,8 +1963,6 @@
 					"-force_load",
 					External/libgit2.a,
 					/usr/local/lib/libssh2.a,
-					"-lcrypto",
-					"-lssl",
 					"-lcurl",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
@@ -2214,7 +2172,6 @@
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/usr/local/opt/openssl@1.1/lib",
 					"$(PROJECT_DIR)/External/build/lib",
 				);
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
@@ -2223,8 +2180,6 @@
 					"-force_load",
 					External/libgit2.a,
 					/usr/local/lib/libssh2.a,
-					"-lcrypto",
-					"-lssl",
 					"-lcurl",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
