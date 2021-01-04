@@ -1694,6 +1694,8 @@
 					"-lgit2",
 					"-force_load",
 					External/libgit2.a,
+					"/usr/local/opt/openssl@1.1/lib/libssl.a",
+					"/usr/local/opt/openssl@1.1/lib/libcrypto.a",
 					/usr/local/lib/libssh2.a,
 					"-lcurl",
 				);
@@ -1720,6 +1722,8 @@
 					"-lgit2",
 					"-force_load",
 					External/libgit2.a,
+					"/usr/local/opt/openssl@1.1/lib/libssl.a",
+					"/usr/local/opt/openssl@1.1/lib/libcrypto.a",
 					/usr/local/lib/libssh2.a,
 					"-lcurl",
 				);
@@ -1957,6 +1961,8 @@
 					"-lgit2",
 					"-force_load",
 					External/libgit2.a,
+					"/usr/local/opt/openssl@1.1/lib/libssl.a",
+					"/usr/local/opt/openssl@1.1/lib/libcrypto.a",
 					/usr/local/lib/libssh2.a,
 					"-lcurl",
 				);
@@ -2174,6 +2180,8 @@
 					"-lgit2",
 					"-force_load",
 					External/libgit2.a,
+					"/usr/local/opt/openssl@1.1/lib/libssl.a",
+					"/usr/local/opt/openssl@1.1/lib/libcrypto.a",
 					/usr/local/lib/libssh2.a,
 					"-lcurl",
 				);
