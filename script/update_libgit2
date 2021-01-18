@@ -23,11 +23,18 @@ mkdir build
 cd build
 
 # OpenSSL is keg-only, so add its pkgconfig location manually
-export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
+#export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
+
+
+
+# Build a very neutered version just for config changes
+# so we don't have dependencies
 
 cmake -DBUILD_SHARED_LIBS:BOOL=OFF \
     -DLIBSSH2_INCLUDE_DIRS:PATH=/usr/local/include/ \
     -DBUILD_CLAR:BOOL=OFF \
+    -DUSE_SSH:BOOL=OFF \
+    -DUSE_HTTPS:BOOL=OFF \
     -DTHREADSAFE:BOOL=ON \
     ..
 cmake --build .

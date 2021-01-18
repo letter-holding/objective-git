@@ -1694,10 +1694,6 @@
 					"-lgit2",
 					"-force_load",
 					External/libgit2.a,
-					"/usr/local/opt/openssl@1.1/lib/libssl.a",
-					"/usr/local/opt/openssl@1.1/lib/libcrypto.a",
-					/usr/local/lib/libssh2.a,
-					"-lcurl",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ObjectiveGit;
@@ -1723,10 +1719,6 @@
 					"-lgit2",
 					"-force_load",
 					External/libgit2.a,
-					"/usr/local/opt/openssl@1.1/lib/libssl.a",
-					"/usr/local/opt/openssl@1.1/lib/libcrypto.a",
-					/usr/local/lib/libssh2.a,
-					"-lcurl",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ObjectiveGit;
@@ -1960,10 +1952,6 @@
 					"-lgit2",
 					"-force_load",
 					External/libgit2.a,
-					"/usr/local/opt/openssl@1.1/lib/libssl.a",
-					"/usr/local/opt/openssl@1.1/lib/libcrypto.a",
-					/usr/local/lib/libssh2.a,
-					"-lcurl",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ObjectiveGit;
@@ -2179,10 +2167,6 @@
 					"-lgit2",
 					"-force_load",
 					External/libgit2.a,
-					"/usr/local/opt/openssl@1.1/lib/libssl.a",
-					"/usr/local/opt/openssl@1.1/lib/libcrypto.a",
-					/usr/local/lib/libssh2.a,
-					"-lcurl",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ObjectiveGit;
