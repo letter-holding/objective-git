@@ -1684,19 +1684,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = (
+					External/libgit2/include,
+					"$(PROJECT_DIR)/../ThirdPartyPreCompiled/OpenSSL/$(PLATFORM_NAME)/include",
+				);
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/External/build/lib",
+					"$(PROJECT_DIR)/../../ThirdPartyPreCompiled/OpenSSL/$(PLATFORM_NAME)/lib",
 				);
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = (
 					"-lgit2",
 					"-force_load",
 					External/libgit2.a,
-					"/usr/local/opt/openssl@1.1/lib/libssl.a",
-					"/usr/local/opt/openssl@1.1/lib/libcrypto.a",
-					/usr/local/lib/libssh2.a,
+					"-lcrypto",
 					"-lcurl",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
@@ -1713,19 +1716,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = (
+					External/libgit2/include,
+					"$(PROJECT_DIR)/../ThirdPartyPreCompiled/OpenSSL/$(PLATFORM_NAME)/include",
+				);
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/External/build/lib",
+					"$(PROJECT_DIR)/../../ThirdPartyPreCompiled/OpenSSL/$(PLATFORM_NAME)/lib",
 				);
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = (
 					"-lgit2",
 					"-force_load",
 					External/libgit2.a,
-					"/usr/local/opt/openssl@1.1/lib/libssl.a",
-					"/usr/local/opt/openssl@1.1/lib/libcrypto.a",
-					/usr/local/lib/libssh2.a,
+					"-lcrypto",
 					"-lcurl",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
@@ -1950,19 +1956,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = (
+					External/libgit2/include,
+					"$(PROJECT_DIR)/../ThirdPartyPreCompiled/OpenSSL/$(PLATFORM_NAME)/include",
+				);
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/External/build/lib",
+					"$(PROJECT_DIR)/../../ThirdPartyPreCompiled/OpenSSL/$(PLATFORM_NAME)/lib",
 				);
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = (
 					"-lgit2",
 					"-force_load",
 					External/libgit2.a,
-					"/usr/local/opt/openssl@1.1/lib/libssl.a",
-					"/usr/local/opt/openssl@1.1/lib/libcrypto.a",
-					/usr/local/lib/libssh2.a,
+					"-lcrypto",
 					"-lcurl",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
@@ -2005,9 +2014,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					External/build/include,
+					"$(PROJECT_DIR)/../ThirdPartyPreCompiled/OpenSSL/$(PLATFORM_NAME)/include",
 				);
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/External/build/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/External/build/lib",
+					"$(PROJECT_DIR)/../ThirdPartyPreCompiled/OpenSSL/$(PLATFORM_NAME)/lib",
+				);
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
@@ -2062,9 +2075,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					External/build/include,
+					"$(PROJECT_DIR)/../ThirdPartyPreCompiled/OpenSSL/$(PLATFORM_NAME)/include",
 				);
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/External/build/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/External/build/lib",
+					"$(PROJECT_DIR)/../ThirdPartyPreCompiled/OpenSSL/$(PLATFORM_NAME)/lib",
+				);
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
@@ -2087,9 +2104,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					External/build/include,
+					"$(PROJECT_DIR)/../ThirdPartyPreCompiled/OpenSSL/$(PLATFORM_NAME)/include",
 				);
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/External/build/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/External/build/lib",
+					"$(PROJECT_DIR)/../ThirdPartyPreCompiled/OpenSSL/$(PLATFORM_NAME)/lib",
+				);
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
@@ -2112,9 +2133,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					External/build/include,
+					"$(PROJECT_DIR)/../ThirdPartyPreCompiled/OpenSSL/$(PLATFORM_NAME)/include",
 				);
 				INFOPLIST_FILE = Info.plist;
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/External/build/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/External/build/lib",
+					"$(PROJECT_DIR)/../ThirdPartyPreCompiled/OpenSSL/$(PLATFORM_NAME)/lib",
+				);
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
@@ -2169,19 +2194,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = (
+					External/libgit2/include,
+					"$(PROJECT_DIR)/../ThirdPartyPreCompiled/OpenSSL/$(PLATFORM_NAME)/include",
+				);
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/External/build/lib",
+					"$(PROJECT_DIR)/../../ThirdPartyPreCompiled/OpenSSL/$(PLATFORM_NAME)/lib",
 				);
 				MODULEMAP_FILE = ObjectiveGit.modulemap;
 				OTHER_LDFLAGS = (
 					"-lgit2",
 					"-force_load",
 					External/libgit2.a,
-					"/usr/local/opt/openssl@1.1/lib/libssl.a",
-					"/usr/local/opt/openssl@1.1/lib/libcrypto.a",
-					/usr/local/lib/libssh2.a,
+					"-lcrypto",
 					"-lcurl",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.libgit2.$(PRODUCT_NAME:rfc1034identifier)";
